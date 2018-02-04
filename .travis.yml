@@ -11,6 +11,7 @@ matrix:
     - rust: nightly
 
 script:
+  - rustup install clippy
   - cargo build
   - cargo test
   - cargo clippy
